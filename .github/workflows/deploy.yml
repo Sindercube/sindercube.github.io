@@ -16,6 +16,7 @@ jobs:
               uses: actions/checkout@v4
             - name: Setup Astro
               uses: withastro/action@v3
+              package-manager: pnpm@latest
 
     deploy:
         needs: build
