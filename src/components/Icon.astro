@@ -1,0 +1,18 @@
+---
+export interface Props {
+	name: string;
+}
+
+const { name } = Astro.props;
+const url = `https://raw.githubusercontent.com/simple-icons/simple-icons/refs/heads/develop/icons/${name}.svg`
+---
+
+<img src={url}/>
+
+<style>
+
+img {
+	width: 24px;
+}
+
+</style>
